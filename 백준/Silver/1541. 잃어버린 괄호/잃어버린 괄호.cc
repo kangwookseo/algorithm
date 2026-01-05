@@ -22,13 +22,13 @@ int main()
 			{
 				result += std::stoi(num);
 			}
-			num = "";
 
 			if (idx < input.size() && input[idx] == '-')
 			{
 				isMin = true;
 			}
 
+			num = "";
 		}
 		else
 		{
