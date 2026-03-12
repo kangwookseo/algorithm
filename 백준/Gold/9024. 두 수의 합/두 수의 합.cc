@@ -14,11 +14,10 @@ int main()
 
 	while (t-- > 0)
 	{
-		int n;
-		long long k;
+		int n,k;
 		std::cin >>n>>k;
 
-		std::vector<long long> cont(n);
+		std::vector<int> cont(n);
 		
 		for (int idx = 0; idx < n; ++idx)
 		{
@@ -29,13 +28,13 @@ int main()
 		int l_p = 0;
 		int r_p = n - 1;
 
-		long long min_diff = 200000011;
+		int min_diff = 200000011;
 		int count = 0;
 
 		while(l_p <r_p)
 		{
-			long long sum = cont[l_p] + cont[r_p];
-			long long diff = std::abs(sum - k);
+			int sum = cont[l_p] + cont[r_p];
+			int diff = std::abs(sum - k);
 
 			if (diff<min_diff)
 			{
